@@ -1,0 +1,2 @@
+# janken
+kadai janken app
