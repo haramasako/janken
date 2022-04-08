@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+ 
+<head>
+    <meta charset="UTF-8">
+    <title>じゃんけん</title>
+    <link rel="stylesheet" href="CSS\style.css">
+  <script type="text/javascript">
+    var audioElem;
+
+    function PlaySound() {
+      audioElem = new Audio();
+      audioElem.src = "sound/2022_04_08_00_39_21.mp3";
+      audioElem.play();
+    }
+  </script>
+</head>
+ 
+<body>
+    <h1>じゃんけん</h1>
+    <h2>いざ勝負！</h2>
+    <table>
+        <tr>
+            <td><img src="img/gu.jpg" class="demo_btn" onclick="janken(0)"></td>
+            <audio class="demo_sound" preload="auto">
+                <source src="sound/2022_04_08_00_39_21.mp3" type="audio/mp3">
+            </audio>
+            <td><img src="img/choki.jpg" class="demo_btn" onclick="janken(1)"></td>
+            <td><img src="img/pa.jpg" class="demo_btn" onclick="janken(2)"></td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <th>あなた</th>
+            <th>相方</th>
+        </tr>
+        <tr>
+            <td><img src="" id="userImg"></td>
+            <td><img src="" id="pcImg"></td>
+        </tr>
+        <tr>
+            <td colspan="2" id="res">
+                <p class="image_text" id="result"></p>
+            </td>
+        </tr>
+    </table>
+    <script src="js/janken.js"></script>
+</body>
+ 
+</html>

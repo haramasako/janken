@@ -1,0 +1,73 @@
+/* 共通部分
+------------------------------- */
+
+body{
+    font-family: sans-serif,"Courier New";
+    text-align: center;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+
+}
+
+/* BODY
+------------------------------- */
+.image_text{
+    font-size: 80px;
+    font-style: bold;
+    padding: 0px;
+    margin-top: 0%;
+    text-align: center;
+}
+
+/* 画像をホバーした */
+img.demo_btn:hover{
+	/* 透明度を上げることで、画像の色を薄く見せる。*/
+	opacity:0.5;
+
+	/* リンクをホバーしたときのカーソルにする。*/
+	cursor: pointer;
+}
+
+/* 画像をクリックした瞬間 */
+img.demo_btn:active{
+
+	/* 要素を若干下に下げることで、押した感じを出す。*/
+
+	/* 今いる位置から相対的に3px下に配置する。*/
+	position: relative;
+	top: 3px;
+
+}
+
+/* twitter画像をホバーした */
+img.demo_btn:hover{
+ 
+	/* 透明度を上げることで、画像の色を薄く見せる。*/
+	opacity:0.5;
+ 
+	/* リンクをホバーしたときのカーソルにする。*/
+	cursor: pointer;
+}
+ 
+/* twitter画像をクリックした瞬間 */
+img.demo_btn:active{
+ 
+	/* 要素を若干下に下げることで、押した感じを出す。*/
+ 
+	/* 今いる位置から相対的に3px下に配置する。*/
+	position: relative;
+	top: 3px;
+ 
+}
